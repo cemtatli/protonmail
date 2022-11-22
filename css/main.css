@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: #706d6b;
+}
+
+body {
+  background: url(/images/bg.jpg) no-repeat;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container .header {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  padding: 14px 28px 56px 28px;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header .language-select {
+  width: 118px;
+  background: #fff url(/images/world-icon.svg) no-repeat 4px;
+  border: 1px solid #6243e6;
+  border-radius: 8px;
+  height: 28px;
+  padding: 4px 12px 4px 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6243e6;
+}
+
+.container .header .language-select option {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .header .language-select:focus {
+  outline: none;
+}
+
+.container .header .language-select:hover {
+  background: rgba(255, 255, 255, 0.6) url(/images/world-icon.svg) no-repeat 4px;
+}
+
+.container .content {
+  width: 100%;
+  height: 675px;
+  margin-bottom: 6rem;
+}
+
+.container .content .form {
+  width: 480px;
+  height: 584.97px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+  padding: 44px;
+}
+
+.container .content .form .form-info {
+  height: 100px;
+}
+
+.container .content .form .form-info h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.85rem;
+  color: #0c0c14;
+}
+
+.container .content .form .form-info p {
+  color: #706d6b;
+}
+
+.container .content .form .form-card {
+  height: 415px;
+}
+
+.container .content .form .form-card .email-input {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .form .form-card .email-input label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #0c0c14;
+  margin-bottom: 6px;
+}
+
+.container .content .form .form-card .email-input input {
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid #6d4aff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-weight: normal;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.container .content .form .form-card .email-input input:focus {
+  outline: 0;
+  box-shadow: 0px 0px 0px 3px rgba(109, 74, 255, 0.2);
+}
+
+.container .content .form .form-card .password-input {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .content .form .form-card .password-input label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #0c0c14;
+  margin-bottom: 6px;
+}
+
+.container .content .form .form-card .password-input input {
+  height: 44px;
+  background: #ffffff url(/images/eyes.svg) no-repeat calc(100% - 10.5px);
+  border: 1px solid #6d4aff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.container .content .form .form-card .password-input input:focus {
+  outline: 0px;
+  box-shadow: 0px 0px 0px 3px rgba(109, 74, 255, 0.2);
+}
+
+.container .content .form .form-card .keep-button {
+  width: 100%;
+  height: 65px;
+}
+
+.container .content .form .form-card .keep-button .checkbox-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background: #fff;
+  border: 1px solid #adaba8;
+  border-radius: 4px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .content .form .form-card .keep-button .checkbox-button::after {
+  content: "\f00c";
+  background: transparent;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  visibility: hidden;
+  scale: 0;
+  color: #fff;
+}
+
+.container .content .form .form-card .keep-button .checkbox-button:checked::after {
+  display: flex;
+  color: #6243e6;
+  transition: 0.3s all ease-in;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  scale: 1;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.container .content .form .form-card .keep-button label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  height: 20px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0c0c14;
+  cursor: pointer;
+}
+
+.container .content .form .form-card .keep-button p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  align-items: center;
+  color: #706d6b;
+}
+
+.container .content .form .form-card .keep-button p span {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #706d6b;
+  cursor: pointer;
+}
+
+.container .content .form .form-card .keep-button p span:hover {
+  text-decoration: none;
+}
+
+.container .content .form .form-card hr {
+  background: #d1cfcd;
+  margin: 15px 0;
+}
+
+.container .content .form .form-card a {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #6d4aff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container .content .form .form-card a:hover {
+  text-decoration: none;
+}
+
+.container .content .form .button {
+  margin-top: 1.75rem;
+  width: 100%;
+  background: #6d4aff;
+  color: #ffffff;
+  border-radius: 8px;
+  height: 44px;
+  outline: 0;
+  border: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container .content .form .button:hover {
+  background: #6243e6;
+  transition: 300ms all ease-in;
+}
+
+.container .content .form .create-section {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #0c0c14;
+}
+
+.container .content .form .create-section span {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #6d4aff;
+  cursor: pointer;
+}
+
+.container .content .form .create-section span:hover {
+  text-decoration: none;
+}
+
+.container .content .others {
+  margin: 21px auto;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .content .others img {
+  width: 48px;
+  height: 48px;
+}
+
+.container .footer {
+  height: 50px;
+}
+
+.container .footer p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #0c0c14;
+}
+
+.container .footer nav {
+  height: 35px;
+  align-items: center;
+}
+
+.container .footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8.8px;
+}
+
+.container .footer nav ul li {
+  list-style-type: none;
+  align-items: center;
+}
+
+.container .footer nav ul li a {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #6d4aff;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+}
+
+.container .footer nav ul li a span {
+  color: #0c0c14;
+}
+
+.container .footer nav ul li a:hover {
+  text-decoration: none;
+}
+
+.container .footer nav ul li .none {
+  text-decoration: none;
+  color: #0c0c14;
+}
+
+.container .footer nav .need-help {
+  display: flex;
+  padding: 0px 24px;
+  justify-content: flex-end;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #6d4aff;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container .footer nav .need-help:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .need-help {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}

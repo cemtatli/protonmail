@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proton Mail</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/images/mail.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <img class="icon" src="/images/logo.png" alt="Header Logo">
+            </div>
+            <select name="language-select" class="language-select">
+                <option selected value="English">English</option>
+                <option value="Türkçe">Türkçe</option>
+                <option value="Türkçe">Català</option>
+                <option value="Türkçe">Español</option>
+                <option value="Türkçe">Deutsch</option>
+            </select>
+        </header>
+        <!-- Content Section -->
+        <main class="content">
+            <div class="form">
+                <div class="form-info">
+                    <h3>Sign in</h3>
+                    <p>Enter your Proton Account details.</p>
+                </div>
+                <div class="form-card">
+                    <form action="form">
+                        <div class="email-input">
+                            <label for="email">Email or username</label>
+                            <input type="email">
+                        </div>
+                        <div class="password-input">
+                            <label for="password">Password</label>
+                            <input type="password">
+                        </div>
+
+                        <div class="keep-button">
+                            <input class="checkbox-button" type="checkbox" id="keep" name="keep" value="">
+                            <label for="keep">Keep me signed in </label>
+
+
+                            <p>Not your device? Use a private browsing window to sign in and close it when
+                                done. <span>Learn more</span></p>
+                        </div>
+
+                    </form>
+
+                    <button class="button" href="#">Sign in</button>
+                    <div class="create-section">
+                        <p>New to Proton? <span>Create account</span></p>
+                    </div>
+                    <hr>
+                    <a href="#">Trouble signing in?</a>
+                </div>
+            </div>
+            <div class="others">
+                <img src="/images/mail.svg" alt="mail">
+                <img src="/images/calendar.svg" alt="mail">
+                <img src="/images/drive.svg" alt="mail">
+                <img src="/images/vpn.svg" alt="mail">
+
+            </div>
+
+        </main>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>Proton. Privacy by default.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Terms <span>|</span></a></li>
+                    <li><a href="#">Privacy policy <span>|</span> </a></li>
+                    <li><a class="none" href="#">Version 5.0.11.12</a></li>
+                </ul>
+                <a class="need-help" href="#">Need Help ?</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
